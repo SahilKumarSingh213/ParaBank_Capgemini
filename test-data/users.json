@@ -1,0 +1,13 @@
+{
+    "firstName": "Sahil",
+    "lastName": "Singh",
+    "address": "123 Main Street",
+    "city": "Sri Ganganagar",
+    "state": "Rajasthan",
+    "zipCode": "335001",
+    "phone": "9876543210",
+    "ssn": "123456789",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234"
+
+}
