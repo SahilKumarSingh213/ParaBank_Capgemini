@@ -1,0 +1,7 @@
+[API-SETUP] Setting up new user and accounts for transfer tests
+[API-SETUP] Customer ID: 18650
+[API-SETUP] From account: 24777, To account: 24888
+[API-07] Checking balance before transfer for account: 24888
+[API-07] Balance before: 100
+[API-07] Transfer of 50 completed
+[API-07] Balance after: 150, Difference: 50

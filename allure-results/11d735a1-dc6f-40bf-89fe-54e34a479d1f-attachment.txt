@@ -1,0 +1,2 @@
+[ACC-02] Opening CHECKING account for user: sahil_1781350286384
+[ACC-02] Success message: Congratulations, your account is now open.

@@ -28,11 +28,16 @@ export class OpenAccountPage{
   }
 
  // select account type and from account then click open
-async openAccount(accountType: string, fromAccountId: string) {
-    await this.AccountType.selectOption(accountType);
-    await this.AccountID.selectOption(fromAccountId);
-    await this.OpenAccountButton.click();
-  }
+// async openAccount(accountType: string, fromAccountId: string) {
+//     await this.AccountType.selectOption(accountType);
+//     await this.AccountID.selectOption(fromAccountId);
+//     await this.OpenAccountButton.click();
+//   }
+async openAccount(accountType: string) {
+  await this.AccountType.selectOption(accountType);
+  await expect(this.AccountID).not.toBeEmpty();
+  await this.OpenAccountButton.click();
+}
 
 // get new account ID after account is opened
 async getNewAccountId() {

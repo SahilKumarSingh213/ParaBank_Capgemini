@@ -48,6 +48,7 @@ export class RegisterPage {
 
   // method to perform registration action with given user details and username
   async register(user: any, username: string) {
+  await this.FirstName.waitFor({ state: 'visible' });
   await this.FirstName.fill(user.firstName);
   await this.LastName.fill(user.lastName);
   await this.Address.fill(user.address);

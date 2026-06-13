@@ -1,0 +1,8 @@
+[E2E-01] Registering user: sahil_1781350256218
+[E2E-01] Customer ID: 18983
+[E2E-01] Opening new savings account via UI
+[E2E-01] New account ID from UI: 25443
+[E2E-01] Validating account in API
+[E2E-01] Account found in API: true
+[E2E-01] Validating account type and balance
+[E2E-01] Account type: SAVINGS, Balance: 100

@@ -1,0 +1,2 @@
+[REG-03] Testing partial field validations
+[REG-03] Error messages received: Address is required.,City is required.,State is required.,Zip Code is required.,Social Security Number is required.,Username is required.,Password is required.,Password confirmation is required.

@@ -1,0 +1,2 @@
+[PERF-01] Measuring login page load time
+[PERF-01] Login page load time: 1977ms

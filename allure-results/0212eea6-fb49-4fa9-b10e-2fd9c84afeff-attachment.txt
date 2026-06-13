@@ -1,0 +1,2 @@
+[API-NEG-01] Testing invalid customer ID: 99999999
+[API-NEG-01] Response status: 400

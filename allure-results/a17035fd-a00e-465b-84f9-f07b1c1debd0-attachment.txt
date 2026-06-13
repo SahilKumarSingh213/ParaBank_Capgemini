@@ -1,0 +1,6 @@
+[API-SETUP] Setting up new user and accounts for transfer tests
+[API-SETUP] Customer ID: 18872
+[API-SETUP] From account: 25110, To account: 25221
+[API-08] Checking total balance conservation
+[API-08] Total before: 200
+[API-08] Total after: 200

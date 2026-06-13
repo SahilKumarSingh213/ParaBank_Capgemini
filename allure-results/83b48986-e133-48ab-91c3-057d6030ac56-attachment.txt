@@ -1,0 +1,2 @@
+[TRF-05] Testing negative amount transfer — confirming DEF-04 bug
+[TRF-05] Transfer message: Transfer Complete!

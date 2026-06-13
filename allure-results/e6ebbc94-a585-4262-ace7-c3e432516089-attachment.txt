@@ -1,0 +1,2 @@
+[MSG-01] Verifying success message after account creation
+[MSG-01] Message: Congratulations, your account is now open., New account ID: 27663

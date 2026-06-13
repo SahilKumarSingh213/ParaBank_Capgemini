@@ -1,0 +1,4 @@
+[LOGIN-SETUP] Registering new user for login tests
+[LOGIN-SETUP] User registered and logged out: sahil_1781350278926
+[LGN-03] Testing invalid credentials
+[LGN-03] Error message: The username and password could not be verified.

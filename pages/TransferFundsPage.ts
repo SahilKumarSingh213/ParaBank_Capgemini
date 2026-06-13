@@ -30,12 +30,19 @@ export class TransferFundsPage{
 }
 
 // method to transfer funds
-async transferFunds(amount: string, fromAccountId: string, toAccountId: string) {
-    await this.Ammount.fill(amount);
-    await this.AccountFrom.selectOption(fromAccountId);
-    await this.AccountTo.selectOption(toAccountId);
-    await this.TransferButton.click();
-  }
+// async transferFunds(amount: string, fromAccountId: string, toAccountId: string) {
+//     await this.Ammount.fill(amount);
+//     await this.AccountFrom.selectOption(fromAccountId);
+//     await this.AccountTo.selectOption(toAccountId);
+//     await this.TransferButton.click();
+//   }
+async transferFunds(amount: string, toAccountId: string) {
+  await this.Ammount.fill(amount);
+  await this.AccountFrom.locator('option').first().waitFor({ state: 'attached' });
+  await this.AccountTo.locator('option').first().waitFor({ state: 'attached' });
+  await this.AccountTo.selectOption(toAccountId);
+  await this.TransferButton.click();
+}
  // get success message text
 async getSuccessMessage() {
     return await this.SuccessMessage.textContent();
