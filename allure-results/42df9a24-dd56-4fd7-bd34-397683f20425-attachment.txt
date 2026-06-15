@@ -1,2 +1,0 @@
-[TRF-04] Testing zero amount transfer — confirming DEF-03 bug
-[TRF-04] Transfer message: Transfer Complete!

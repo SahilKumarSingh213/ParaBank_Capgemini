@@ -1,2 +1,0 @@
-[PERF-02] Measuring API response time
-[PERF-02] API response time: 266ms

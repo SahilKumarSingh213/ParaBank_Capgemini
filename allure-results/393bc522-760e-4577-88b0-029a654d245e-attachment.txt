@@ -1,2 +1,0 @@
-20 requests completed in: 803ms
-Average response time: 40.15ms

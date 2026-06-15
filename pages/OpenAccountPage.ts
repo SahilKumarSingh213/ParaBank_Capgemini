@@ -12,8 +12,8 @@ export class OpenAccountPage{
   readonly ErrorMessage: Locator;
 
   constructor(page: Page) {
+        // assigning locators
     this.page = page;
-    // assigning locators
     this.AccountType = page.locator('#type');
     this.AccountID = page.locator('#fromAccountId');
     this.OpenAccountButton = page.getByRole('button', { name: 'Open New Account' });
@@ -28,11 +28,6 @@ export class OpenAccountPage{
   }
 
  // select account type and from account then click open
-// async openAccount(accountType: string, fromAccountId: string) {
-//     await this.AccountType.selectOption(accountType);
-//     await this.AccountID.selectOption(fromAccountId);
-//     await this.OpenAccountButton.click();
-//   }
 async openAccount(accountType: string) {
   await this.AccountType.selectOption(accountType);
   await expect(this.AccountID).not.toBeEmpty();

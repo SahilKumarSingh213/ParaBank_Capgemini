@@ -1,4 +1,0 @@
-[TRF-03] Testing empty amount transfer — confirming DEF-02 bug
-[TRF-03] Error message: 
-			An internal error has occurred and has been logged.
-		

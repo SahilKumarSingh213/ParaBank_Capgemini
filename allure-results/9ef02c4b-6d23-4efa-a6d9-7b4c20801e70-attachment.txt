@@ -1,2 +1,0 @@
-[ACC-01] Opening SAVINGS account for user: sahil_1781350282930
-[ACC-01] Success message: Congratulations, your account is now open.

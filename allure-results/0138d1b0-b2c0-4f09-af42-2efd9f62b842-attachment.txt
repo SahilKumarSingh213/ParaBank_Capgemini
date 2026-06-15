@@ -1,3 +1,0 @@
-[PERF-03] Starting throughput test - 20 async requests
-[PERF-03] 20 requests completed in: 1173ms
-[PERF-03] Average response time: 58.65ms

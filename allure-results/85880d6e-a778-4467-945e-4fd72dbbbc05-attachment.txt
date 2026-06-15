@@ -1,4 +1,0 @@
-[LOGIN-SETUP] Registering new user for login tests
-[LOGIN-SETUP] User registered and logged out: sahil_1781350275201
-[LGN-02] Testing empty credentials
-[LGN-02] Error message: Please enter a username and password.

@@ -1,2 +1,0 @@
-[REG-05] Testing wrong data types — confirming DEF-01 bug
-[REG-05] Success message: Your account was created successfully. You are now logged in.

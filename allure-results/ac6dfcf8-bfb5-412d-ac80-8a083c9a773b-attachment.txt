@@ -1,3 +1,0 @@
-[API-SCHEMA] Validating account schema for customer: 12212
-[API-SCHEMA] Validating 17 accounts
-[API-SCHEMA] All accounts passed schema validation

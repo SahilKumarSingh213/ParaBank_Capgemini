@@ -1,2 +1,0 @@
-[ACC-03] Verifying account overview after opening new account
-[ACC-03] Verifying account count in overview table

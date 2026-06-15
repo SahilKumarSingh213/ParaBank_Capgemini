@@ -1,2 +1,0 @@
-[REG-04] Registering duplicate username: sahil_1781350309501
-[REG-04] Error messages received: This username already exists.

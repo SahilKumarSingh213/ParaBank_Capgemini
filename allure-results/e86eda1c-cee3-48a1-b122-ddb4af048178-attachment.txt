@@ -1,3 +1,0 @@
-[API-01] Calling GET accounts for customer: 12212
-[API-01] Response status: 200
-[API-01] Total accounts found: 17

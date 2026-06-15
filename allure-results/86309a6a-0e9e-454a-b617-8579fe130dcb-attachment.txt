@@ -1,2 +1,0 @@
-[REG-01] Registering user: sahil_1781350302379
-[REG-01] Success message: Your account was created successfully. You are now logged in.
