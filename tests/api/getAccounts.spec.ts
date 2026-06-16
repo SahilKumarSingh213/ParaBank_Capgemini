@@ -3,12 +3,10 @@
 import { test, expect } from '@playwright/test';
 import { BASE_URL, HEADERS, CUSTOMER_ID } from '../../config/env';
 
-
  
-  //using fixed customer ID from config since demo site resets periodically and this customer always exists
 test.describe('API - Get Accounts', () => {
 
-  test('TC-API-01 - get accounts returns 200 @regression @api', async ({ request }) => {
+  test('TC-API-01 - get accounts returns 200 ', async ({ request }) => {
     console.log('TC-API-01 - GET accounts');
     const response = await request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {
       headers: HEADERS });
@@ -18,7 +16,7 @@ test.describe('API - Get Accounts', () => {
     console.log(`accounts found: ${body.length}`);
     expect(body.length).toBeGreaterThan(0);});
 
-  test('TC-API-NEG-01 - invalid customer ID should not return 200 @regression @api', async ({ request }) => {
+  test('TC-API-NEG-01 - invalid customer ID should not return 200 ', async ({ request }) => {
     console.log('TC-API-NEG-01 - invalid customer ID');
     const response = await request.get(`${BASE_URL}/customers/99999999/accounts`,{
       headers: HEADERS});
@@ -26,7 +24,7 @@ test.describe('API - Get Accounts', () => {
     console.log(`status: ${response.status()}`);
     expect(response.status()).not.toBe(200); });
 
-  test('validate account schema @regression @api', async ({ request }) => {
+  test('TC-API-SCHEMA - validate account schema', async ({ request }) => {
     console.log('TC-API-SCHEMA - validating account fields');
     const response = await request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {
       headers: HEADERS});

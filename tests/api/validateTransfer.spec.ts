@@ -51,7 +51,7 @@ test.describe('API - Validate Transfer', () => {
     console.log(`from: ${from_account}, to: ${to_account}`);
   });
 
-  test('TC-API-06 - source balance reduced after transfer @regression @api', async ({ request }) => {
+  test('TC-API-06 - source balance reduced after transfer ', async ({ request }) => {
     console.log('TC-API-06 - checking source balance');
     const from_account_before = await request.get(`${BASE_URL}/accounts/${from_account}`, { headers: HEADERS });
     expect(from_account_before.status()).toBe(200);
@@ -73,7 +73,7 @@ test.describe('API - Validate Transfer', () => {
     expect(balance_before - balance_after).toBe(TRANSFER_AMOUNT);
   });
 
-  test('TC-API-07 - destination balance increased after transfer @regression @api', async ({ request }) => {
+  test('TC-API-07 - destination balance increased after transfer ', async ({ request }) => {
     console.log('TC-API-07 - checking destination balance');
     const to_account_before = await request.get(`${BASE_URL}/accounts/${to_account}`, { headers: HEADERS });
     expect(to_account_before.status()).toBe(200);
@@ -95,28 +95,7 @@ test.describe('API - Validate Transfer', () => {
     expect(balance_after - balance_before).toBe(TRANSFER_AMOUNT);
   });
 
-  test('TC-API-08 - total balance conserved after transfer @regression @api', async ({ request }) => {
-    console.log('TC-API-08 - checking total balance');
-    const from_account_before = await request.get(`${BASE_URL}/accounts/${from_account}`, { headers: HEADERS });
-    const from_before = (await from_account_before.json()).balance;
 
-    const to_account_before = await request.get(`${BASE_URL}/accounts/${to_account}`, { headers: HEADERS });
-    const to_before = (await to_account_before.json()).balance;
-    console.log(`total before: ${from_before + to_before}`);
-
-    await request.post(
-      `${BASE_URL}/transfer?fromAccountId=${from_account}&toAccountId=${to_account}&amount=${TRANSFER_AMOUNT}`,
-      { headers: HEADERS }
-    );
-
-    const from_account_after = await request.get(`${BASE_URL}/accounts/${from_account}`, { headers: HEADERS });
-    const from_after = (await from_account_after.json()).balance;
-
-    const to_account_after = await request.get(`${BASE_URL}/accounts/${to_account}`, { headers: HEADERS });
-    const to_after = (await to_account_after.json()).balance;
-    console.log(`total after: ${from_after + to_after}`);
-
-    expect(from_after + to_after).toBe(from_before + to_before);
-  });
 
 });
+

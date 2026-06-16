@@ -3,7 +3,7 @@ import { BASE_URL, HEADERS, CUSTOMER_ID } from '../../config/env';
 
 test.describe('Performance Tests', () => {
 
-  test('TC-PERF-01 - login page load time @regression @performance', async ({ page }) => {
+  test('TC-PERF-01 - login page load time', async ({ page }) => {
     console.log('TC-PERF-01 - measuring page load time');
     const start = Date.now();
     await page.goto('https://parabank.parasoft.com/parabank/index.htm');
@@ -13,7 +13,7 @@ test.describe('Performance Tests', () => {
     expect(load_time).toBeLessThan(5000);
   });
 
-  test('TC-PERF-02 - GET accounts response time under 2 seconds @regression @performance', async ({ request }) => {
+  test('TC-PERF-02 - GET accounts response time under 2 seconds', async ({ request }) => {
     console.log('TC-PERF-02 - measuring API response time');
     const start = Date.now();
     const response = await request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {
@@ -25,7 +25,7 @@ test.describe('Performance Tests', () => {
     expect(response_time).toBeLessThan(2000);
   });
 
-  test('TC-PERF-03 - GET accounts 20 times async @regression @performance', async ({ request }) => {
+  test('TC-PERF-03 - GET accounts 20 times async', async ({ request }) => {
     console.log('TC-PERF-03 - throughput test 20 requests');
     const all_requests = Array.from({ length: 20 }, () =>
       request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {

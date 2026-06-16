@@ -1,0 +1,2 @@
+TC-UI-ACC-02 - opening checking account
+message: Congratulations, your account is now open.

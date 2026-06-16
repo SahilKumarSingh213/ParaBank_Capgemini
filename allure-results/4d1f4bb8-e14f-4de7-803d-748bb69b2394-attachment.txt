@@ -1,0 +1,3 @@
+TC-PERF-03 - throughput test 20 requests
+total time: 643ms
+average time: 32.15ms

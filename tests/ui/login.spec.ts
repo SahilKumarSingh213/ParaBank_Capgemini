@@ -19,7 +19,7 @@ test.describe('Login Tests', () => {
     console.log(`user registered: ${username}`);
   });
 
-  test('TC-UI-LGN-01 - login with valid credentials @smoke @regression', async ({ page }) => {
+  test('TC-UI-LGN-01 - login with valid credentials ', async ({ page }) => {
     console.log('TC-UI-LGN-01 - valid login');
     const login_page = new LoginPage(page);
     await login_page.goto();
@@ -28,7 +28,7 @@ test.describe('Login Tests', () => {
     await expect(page).toHaveURL(/overview/);
   });
 
-  test('TC-UI-LGN-02 - login with empty credentials @regression', async ({ page }) => {
+  test('TC-UI-LGN-02 - login with empty credentials ', async ({ page }) => {
     console.log('TC-UI-LGN-02 - empty credentials');
     const login_page = new LoginPage(page);
     await login_page.goto();
@@ -38,7 +38,7 @@ test.describe('Login Tests', () => {
     expect(error).toContain('Please enter a username and password.');
   });
 
-  test('TC-UI-LGN-03 - login with invalid credentials @regression', async ({ page }) => {
+  test('TC-UI-LGN-03 - login with invalid credentials ', async ({ page }) => {
     console.log('TC-UI-LGN-03 - invalid credentials');
     const login_page = new LoginPage(page);
     await login_page.goto();

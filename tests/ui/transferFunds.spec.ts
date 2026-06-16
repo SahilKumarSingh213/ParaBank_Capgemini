@@ -13,7 +13,7 @@ import users from '../../test-data/users.json';
 
 test.describe('Transfer Funds Tests', () => {
 
-  test('TC-UI-TRF-01 - transfer funds between accounts @smoke @regression', async ({ page }) => {
+  test('TC-UI-TRF-01 - transfer funds between accounts ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-TRF-01 - valid transfer');
     const register_page = new RegisterPage(page);
@@ -36,7 +36,7 @@ test.describe('Transfer Funds Tests', () => {
     expect(message).toContain('Transfer Complete!');
   });
 
-  test('TC-UI-TRF-03 - transfer empty amount shows error @regression', async ({ page }) => {
+  test('TC-UI-TRF-03 - transfer empty amount shows error ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-TRF-03 - empty amount');
     const register_page = new RegisterPage(page);
@@ -57,7 +57,7 @@ test.describe('Transfer Funds Tests', () => {
     expect(error).toContain('An internal error has occurred and has been logged.');
   });
 
-  test('TC-UI-TRF-04 - transfer zero amount is accepted @regression', async ({ page }) => {
+  test('TC-UI-TRF-04 - transfer zero amount is accepted ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-TRF-04 - zero amount');
     const register_page = new RegisterPage(page);
@@ -79,7 +79,7 @@ test.describe('Transfer Funds Tests', () => {
     expect(message).toContain('Transfer Complete!');
   });
 
-  test('TC-UI-TRF-05 - transfer negative amount is accepted @regression', async ({ page }) => {
+  test('TC-UI-TRF-05 - transfer negative amount is accepted ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-TRF-05 - negative amount');
     const register_page = new RegisterPage(page);

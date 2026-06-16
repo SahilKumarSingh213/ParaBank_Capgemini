@@ -4,7 +4,7 @@ import { BASE_URL, HEADERS, CUSTOMER_ID, FROM_ACCOUNT_ID } from '../../config/en
 
 test.describe('API - Validate Account', () => {
 
-    test('TC-API-03 - new account exists in API @regression @api', async ({ request }) => {
+    test('TC-API-03 - new account exists in API', async ({ request }) => {
         console.log('TC-API-03 - creating account via API');
         const new_account = await request.post(`${BASE_URL}/createAccount?customerId=${CUSTOMER_ID}&newAccountType=1&fromAccountId=${FROM_ACCOUNT_ID}`, {
             headers: HEADERS
@@ -29,7 +29,7 @@ test.describe('API - Validate Account', () => {
         expect(account_found).toBeTruthy();
     });
 
-    test('TC-API-04 - new account type is SAVINGS @regression @api', async ({ request }) => {
+    test('TC-API-04 - new account type is SAVINGS', async ({ request }) => {
         console.log('TC-API-04 - validating account type and balance');
 
         const new_account = await request.post(`${BASE_URL}/createAccount?customerId=${CUSTOMER_ID}&newAccountType=1&fromAccountId=${FROM_ACCOUNT_ID}`, {
@@ -43,7 +43,7 @@ test.describe('API - Validate Account', () => {
         expect(typeof body.balance).toBe('number');
     });
 
-    test('TC-API-05 - invalid customerId returns error @regression @api', async ({ request }) => {
+    test('TC-API-05 - invalid customerId returns error', async ({ request }) => {
       const createAccountResponse = await request.post(`${BASE_URL}/createAccount?customerId=00000&newAccountType=1&fromAccountId=${FROM_ACCOUNT_ID}`, {
             headers: HEADERS
         });

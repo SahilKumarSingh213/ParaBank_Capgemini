@@ -1,0 +1,2 @@
+TC-PERF-01 - measuring page load time
+load time: 4777ms

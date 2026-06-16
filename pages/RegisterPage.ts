@@ -38,7 +38,6 @@ export class RegisterPage {
     this.ErrorMessage= page.locator('.error');
     this.SuccessMessage = page.locator('#rightPanel p');
 
-
   }
 
   // method to navigate to the home page

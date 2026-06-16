@@ -6,7 +6,7 @@ import users from '../../test-data/users.json';
 
 test.describe('Registration Tests', () => {
 
-  test('TC-UI-REG-01 - register with valid credentials @smoke @regression', async ({ page }) => {
+  test('TC-UI-REG-01 - register with valid credentials ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-REG-01 - valid registration');
     const register_page = new RegisterPage(page);
@@ -18,7 +18,7 @@ test.describe('Registration Tests', () => {
     expect(message).toContain('Your account was created successfully. You are now logged in.');
   });
 
-  test('TC-UI-REG-02 - register with empty credentials @regression', async ({ page }) => {
+  test('TC-UI-REG-02 - register with empty credentials ', async ({ page }) => {
     console.log('TC-UI-REG-02 - empty fields');
     const register_page = new RegisterPage(page);
     await register_page.goto();
@@ -38,7 +38,7 @@ test.describe('Registration Tests', () => {
     expect(errors).toContain('Password confirmation is required.');
   });
 
-  test('TC-UI-REG-03 - register with partial fields @regression', async ({ page }) => {
+  test('TC-UI-REG-03 - register with partial fields ', async ({ page }) => {
     console.log('TC-UI-REG-03 - partial fields');
     const register_page = new RegisterPage(page);
     await register_page.goto();
@@ -60,7 +60,7 @@ test.describe('Registration Tests', () => {
     expect(errors).toContain('Password confirmation is required.');
   });
 
-  test('TC-UI-REG-04 - register with duplicate username @regression', async ({ page }) => {
+  test('TC-UI-REG-04 - register with duplicate username ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-REG-04 - duplicate username');
     const register_page = new RegisterPage(page);
@@ -75,7 +75,7 @@ test.describe('Registration Tests', () => {
     expect(errors).toContain('This username already exists.');
   });
 
-  test('TC-UI-REG-05 - register with wrong data types @regression', async ({ page }) => {
+  test('TC-UI-REG-05 - register with wrong data types ', async ({ page }) => {
     console.log('TC-UI-REG-05 - wrong data types');
     const register_page = new RegisterPage(page);
     await register_page.goto();

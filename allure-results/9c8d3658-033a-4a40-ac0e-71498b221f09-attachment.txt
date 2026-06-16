@@ -1,0 +1,2 @@
+TC-UI-REG-04 - duplicate username
+errors: This username already exists.

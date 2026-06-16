@@ -1,0 +1,3 @@
+[API-03] Creating new account via API for customer: 12212
+[API-03] New account ID: 73728
+[API-03] Account found in list: true

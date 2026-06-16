@@ -8,7 +8,7 @@ import users from '../../test-data/users.json';
 
 test.describe('Open Account Tests', () => {
 
-  test('TC-UI-ACC-01 - open savings account @smoke @regression', async ({ page }) => {
+  test('TC-UI-ACC-01 - open savings account ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-ACC-01 - opening savings account');
     const register_page = new RegisterPage(page);
@@ -24,7 +24,7 @@ test.describe('Open Account Tests', () => {
     expect(message).toContain('Congratulations, your account is now open.');
   });
 
-  test('TC-UI-ACC-02 - open checking account @regression', async ({ page }) => {
+  test('TC-UI-ACC-02 - open checking account ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-ACC-02 - opening checking account');
     const register_page = new RegisterPage(page);
@@ -40,7 +40,7 @@ test.describe('Open Account Tests', () => {
     expect(message).toContain('Congratulations, your account is now open.');
   });
 
-  test('TC-UI-ACC-03 - account overview updated after opening @regression', async ({ page }) => {
+  test('TC-UI-ACC-03 - account overview updated after opening ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-ACC-03 - checking account overview');
     const register_page = new RegisterPage(page);
@@ -58,7 +58,7 @@ test.describe('Open Account Tests', () => {
     await expect(accounts).toHaveCount(3);
   });
 
-  test('TC-UI-MSG-01 - success message shows new account ID @regression', async ({ page }) => {
+  test('TC-UI-MSG-01 - success message shows new account ID ', async ({ page }) => {
     const username = generateUsername();
     console.log('TC-UI-MSG-01 - checking success message');
     const register_page = new RegisterPage(page);

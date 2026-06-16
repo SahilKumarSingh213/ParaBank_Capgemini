@@ -1,0 +1,2 @@
+TC-API-01 - GET accounts
+status: 429

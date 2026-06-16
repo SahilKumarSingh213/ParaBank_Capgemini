@@ -31,10 +31,10 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
    baseURL: 'https://parabank.parasoft.com',
-   screenshot: 'on',
-   video: 'on',
+   screenshot: 'off',
+   video: 'off',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
+    trace: 'off', 
   },
 
   /* Configure projects for major browsers */

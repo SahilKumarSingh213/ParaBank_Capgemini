@@ -1,0 +1,3 @@
+setting up user for login tests
+user registered: sahil_1781622319840
+TC-UI-LGN-02 - empty credentials
