@@ -1,0 +1,1 @@
+TC-API-04 - validating account type and balance

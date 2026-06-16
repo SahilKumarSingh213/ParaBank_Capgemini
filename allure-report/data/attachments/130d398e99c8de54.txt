@@ -1,0 +1,2 @@
+TC-UI-MSG-01 - checking success message
+message: Congratulations, your account is now open., account id: 15897

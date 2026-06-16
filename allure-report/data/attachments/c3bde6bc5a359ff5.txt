@@ -1,0 +1,4 @@
+setting up user for login tests
+user registered: sahil_1781642473341
+TC-UI-LGN-02 - empty credentials
+error: Please enter a username and password.

@@ -1,0 +1,4 @@
+setting up user for login tests
+user registered: sahil_1781623582188
+TC-UI-LGN-01 - valid login
+url: https://parabank.parasoft.com/parabank/overview.htm
