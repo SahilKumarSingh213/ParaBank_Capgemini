@@ -1,2 +1,0 @@
-TC-UI-REG-01 - valid registration
-message: Your account was created successfully. You are now logged in.

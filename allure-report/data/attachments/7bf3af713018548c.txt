@@ -1,3 +1,0 @@
-TC-API-01 - GET accounts
-status: 200
-accounts found: 11

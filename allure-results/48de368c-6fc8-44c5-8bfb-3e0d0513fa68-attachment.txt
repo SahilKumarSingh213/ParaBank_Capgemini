@@ -1,2 +1,0 @@
-TC-PERF-02 - measuring API response time
-response time: 5250ms

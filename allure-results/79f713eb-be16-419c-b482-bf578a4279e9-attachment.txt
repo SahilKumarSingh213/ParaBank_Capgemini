@@ -1,0 +1,2 @@
+TC-UI-LGN-02 - empty credentials
+error: Please enter a username and password.

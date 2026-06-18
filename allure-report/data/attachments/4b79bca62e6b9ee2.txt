@@ -1,7 +1,0 @@
-setting up user and accounts
-customer id: 14321
-from: 18894, to: 19005
-TC-API-07 - checking destination balance
-balance before: 100
-transfer done: 50
-balance after: 150

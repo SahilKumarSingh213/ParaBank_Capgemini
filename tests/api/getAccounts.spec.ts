@@ -13,18 +13,16 @@ test.describe('API - Get Accounts', () => {
     console.log(`status: ${response.status()}`);
     expect(response.status()).toBe(200);
     const body = await response.json();
-    console.log(`accounts found: ${body.length}`);
     expect(body.length).toBeGreaterThan(0);});
 
   test('TC-API-NEG-01 - invalid customer ID should not return 200 ', async ({ request }) => {
     console.log('TC-API-NEG-01 - invalid customer ID');
     const response = await request.get(`${BASE_URL}/customers/99999999/accounts`,{
       headers: HEADERS});
-
     console.log(`status: ${response.status()}`);
     expect(response.status()).not.toBe(200); });
 
-  test('TC-API-SCHEMA - validate account schema', async ({ request }) => {
+  test('TC-API-02-SCHEMA - validate account schema', async ({ request }) => {
     console.log('TC-API-SCHEMA - validating account fields');
     const response = await request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {
       headers: HEADERS});

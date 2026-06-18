@@ -1,2 +1,0 @@
-TC-API-NEG-01 - invalid customer ID
-status: 400

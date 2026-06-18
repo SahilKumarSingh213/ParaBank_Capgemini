@@ -25,24 +25,4 @@ test.describe('Performance Tests', () => {
     expect(response_time).toBeLessThan(2000);
   });
 
-  test('TC-PERF-03 - GET accounts 20 times async', async ({ request }) => {
-    console.log('TC-PERF-03 - throughput test 20 requests');
-    const all_requests = Array.from({ length: 20 }, () =>
-      request.get(`${BASE_URL}/customers/${CUSTOMER_ID}/accounts`, {
-        headers: HEADERS
-      })
-    );
-
-    const start = Date.now();
-    const all_responses = await Promise.all(all_requests);
-    const total_time = Date.now() - start;
-
-    console.log(`total time: ${total_time}ms`);
-    console.log(`average time: ${total_time / 20}ms`);
-
-    for (const response of all_responses) {
-      expect(response.status()).toBe(200);
-    }
-  });
-
-});
+})

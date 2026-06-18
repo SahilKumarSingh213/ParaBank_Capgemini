@@ -1,6 +1,0 @@
-setting up user for login tests
-user registered: sahil_1781648879289
-TC-UI-LGN-03 - invalid credentials
-error: 
-			An internal error has occurred and has been logged.
-		

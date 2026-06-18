@@ -1,4 +1,0 @@
-setting up user for login tests
-user registered: sahil_1781497300211
-TC-UI-LGN-03 - invalid credentials
-error: The username and password could not be verified.

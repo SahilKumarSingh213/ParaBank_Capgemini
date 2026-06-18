@@ -1,6 +1,0 @@
-setting up user and accounts
-customer id: 14543
-from: 19338, to: 19449
-TC-API-08 - checking total balance
-total before: 200
-total after: 200

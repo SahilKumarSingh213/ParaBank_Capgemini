@@ -42,8 +42,4 @@ async transferFunds(amount: string, toAccountId: string) {
 async getSuccessMessage() {
     return await this.SuccessMessage.textContent();
   }
- // get error message text
-async getErrorMessage() {
-    return await this.ErrorMessage.textContent();
-  }
 }

@@ -95,7 +95,5 @@ test.describe('API - Validate Transfer', () => {
     expect(balance_after - balance_before).toBe(TRANSFER_AMOUNT);
   });
 
-
-
 });
 

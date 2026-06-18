@@ -12,7 +12,7 @@ export class OpenAccountPage{
   readonly ErrorMessage: Locator;
 
   constructor(page: Page) {
-        // assigning locators
+    // assigning locators
     this.page = page;
     this.AccountType = page.locator('#type');
     this.AccountID = page.locator('#fromAccountId');
@@ -44,8 +44,4 @@ async getSuccessMessage() {
     return await this.SuccessMessage.textContent();
   }
 
-  // get error message text
-async getErrorMessage() {
-    return await this.ErrorMessage.textContent();
-  }
 }

@@ -1,2 +1,0 @@
-setting up accounts
-from: 44424, to: 44535

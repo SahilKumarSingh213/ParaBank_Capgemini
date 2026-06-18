@@ -1,2 +1,0 @@
-TC-UI-REG-05 - wrong data types
-message: Your account was created successfully. You are now logged in.

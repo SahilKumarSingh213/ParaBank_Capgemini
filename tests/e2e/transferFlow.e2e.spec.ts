@@ -11,7 +11,7 @@ const TRANSFER_AMOUNT = 100;
 
 test.describe('E2E - Transfer Flow', () => {
 
-  test('TC-E2E-02 - transfer via UI and validate balances via API @regression @e2e', async ({ page, request }) => {
+  test('TC-E2E-02 - transfer via UI and validate balances via API ', async ({ page, request }) => {
 
     let fromAccountId: string;
     let toAccountId: string;

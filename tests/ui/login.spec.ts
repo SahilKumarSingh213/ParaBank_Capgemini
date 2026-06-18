@@ -9,7 +9,8 @@ test.describe('Login Tests', () => {
 
   let username: string;
 
-  test.beforeEach(async ({ page }) => {
+  test('TC-UI-LGN-01 - login with valid credentials ', async ({ page }) => {
+    console.log('TC-UI-LGN-01 - valid login');
     console.log('setting up user for login tests');
     const register_page = new RegisterPage(page);
     username = generateUsername();
@@ -17,10 +18,6 @@ test.describe('Login Tests', () => {
     await register_page.register(users, username);
     await page.getByRole('link', { name: 'Log Out' }).click();
     console.log(`user registered: ${username}`);
-  });
-
-  test('TC-UI-LGN-01 - login with valid credentials ', async ({ page }) => {
-    console.log('TC-UI-LGN-01 - valid login');
     const login_page = new LoginPage(page);
     await login_page.goto();
     await login_page.login(username, users.password);

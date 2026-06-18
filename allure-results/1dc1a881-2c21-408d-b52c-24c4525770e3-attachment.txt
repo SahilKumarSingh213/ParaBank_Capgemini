@@ -1,7 +1,0 @@
-setting up user and accounts
-customer id: 26753
-from: 46200, to: 46311
-TC-API-06 - checking source balance
-balance before: 100
-transfer done: 50
-balance after: 50

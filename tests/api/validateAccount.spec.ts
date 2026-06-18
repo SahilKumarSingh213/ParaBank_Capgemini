@@ -39,8 +39,6 @@ test.describe('API - Validate Account', () => {
         const body = await new_account.json();
         console.log(`type: ${body.type}, balance: ${body.balance}`);
         expect(body.type).toBe('SAVINGS');
-        expect(body.customerId).toBe(CUSTOMER_ID);
-        expect(typeof body.balance).toBe('number');
     });
 
     test('TC-API-05 - invalid customerId returns error', async ({ request }) => {

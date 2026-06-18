@@ -35,7 +35,7 @@ export class RegisterPage {
     this.Password = page.locator('input[id="customer.password"]');
     this.ConfirmPassword = page.locator('input[id="repeatedPassword"]');
     this.RegisterButton = page.locator('input[value="Register"]');
-    this.ErrorMessage= page.locator('.error');
+    this.ErrorMessage = page.locator('.error');
     this.SuccessMessage = page.locator('#rightPanel p');
 
   }
@@ -47,20 +47,20 @@ export class RegisterPage {
 
   // method to perform registration action with given user details and username
   async register(user: any, username: string) {
-  await this.FirstName.waitFor({ state: 'visible' });
-  await this.FirstName.fill(user.firstName);
-  await this.LastName.fill(user.lastName);
-  await this.Address.fill(user.address);
-  await this.City.fill(user.city);
-  await this.State.fill(user.state);
-  await this.Zip.fill(user.zipCode);
-  await this.Phone.fill(user.phone);
-  await this.SSN.fill(user.ssn);
-  await this.Username.fill(username);
-  await this.Password.fill(user.password);
-  await this.ConfirmPassword.fill(user.confirmPassword);
-  await this.RegisterButton.click();
-}
+    await this.FirstName.waitFor({ state: 'visible' });
+    await this.FirstName.fill(user.firstName);
+    await this.LastName.fill(user.lastName);
+    await this.Address.fill(user.address);
+    await this.City.fill(user.city);
+    await this.State.fill(user.state);
+    await this.Zip.fill(user.zipCode);
+    await this.Phone.fill(user.phone);
+    await this.SSN.fill(user.ssn);
+    await this.Username.fill(username);
+    await this.Password.fill(user.password);
+    await this.ConfirmPassword.fill(user.confirmPassword);
+    await this.RegisterButton.click();
+  }
 
   // method to get the error message text
   async getErrorMessage() {
@@ -68,7 +68,7 @@ export class RegisterPage {
   }
 
   // method to get the success message text
-async getSuccessMessage() {
-  return await this.SuccessMessage.textContent();
-}
+  async getSuccessMessage() {
+    return await this.SuccessMessage.textContent();
+  }
 }

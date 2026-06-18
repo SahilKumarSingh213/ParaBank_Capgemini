@@ -1,3 +1,0 @@
-TC-UI-TRF-01 - valid transfer
-to account: 18450
-message: Transfer Complete!

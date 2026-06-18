@@ -1,3 +1,0 @@
-TC-API-SCHEMA - validating account fields
-checking 1 accounts
-schema check passed

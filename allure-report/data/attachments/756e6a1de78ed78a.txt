@@ -1,2 +1,0 @@
-TC-UI-ACC-01 - opening savings account
-message: Congratulations, your account is now open.

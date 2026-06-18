@@ -1,3 +1,0 @@
-TC-API-03 - creating account via API
-new account id: 20115
-account found: true

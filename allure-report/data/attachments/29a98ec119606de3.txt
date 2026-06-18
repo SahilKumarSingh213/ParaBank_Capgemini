@@ -1,2 +1,0 @@
-[API-VALIDATE] Creating SAVINGS account and validating response
-[API-VALIDATE] Account type: SAVINGS, Balance: 0
